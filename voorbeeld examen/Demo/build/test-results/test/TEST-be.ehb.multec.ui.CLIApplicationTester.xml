@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.ehb.multec.ui.CLIApplicationTester" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-12T10:40:17" hostname="DESKTOP-QUS0RRK" time="1.083">
-  <properties/>
-  <testcase name="allAuteur()" classname="be.ehb.multec.ui.CLIApplicationTester" time="1.083"/>
-  <system-out><![CDATA[*****All auteur
-[Auteur:id=2, Naam='Brown', Voornaam='Dan', Geboortedatum=1989-10-12., Auteur:id=1, Naam='C.S.', Voornaam='Lewis', Geboortedatum=1999-10-12., Auteur:id=5, Naam='Higgins', Voornaam='Jack', Geboortedatum=1989-10-12., Auteur:id=4, Naam='Nabokov', Voornaam='Vladimir', Geboortedatum=1989-10-12.]
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
