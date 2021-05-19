@@ -8,7 +8,7 @@ public abstract class Brood {
         this.description = description;
     }
 
-    protected String getDescription() {
+    public String getDescription() {
         return description;
     }
 

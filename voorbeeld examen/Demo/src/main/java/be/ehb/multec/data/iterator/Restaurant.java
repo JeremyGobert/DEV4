@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Restaurant implements Iterable<MenuItem> {
-    private List<MenuItem> Menu;
+    private static List<MenuItem> Menu;
 
     public Restaurant() {
         Menu = new ArrayList<>();
@@ -15,9 +15,8 @@ public class Restaurant implements Iterable<MenuItem> {
         Menu.add(new MenuItem("Prepare"));
     }
 
-    public List<MenuItem> getMenuItems() {
-        List<MenuItem> menu = new ArrayList<>();
-        menu.addAll(Menu);
+    public static List<MenuItem> getMenuItems() {
+        List<MenuItem> menu = new ArrayList<>(Menu);
         return menu;
     }
 

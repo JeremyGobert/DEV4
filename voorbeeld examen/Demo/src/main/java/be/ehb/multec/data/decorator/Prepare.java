@@ -6,7 +6,7 @@ public class Prepare extends Brood {
     }
 
     @Override
-    protected double cost() {
+    public double cost() {
         return 0.05;
     }
 }

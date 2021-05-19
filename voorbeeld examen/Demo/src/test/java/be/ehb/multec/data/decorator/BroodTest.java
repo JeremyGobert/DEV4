@@ -2,13 +2,13 @@ package be.ehb.multec.data.decorator;
 
 import org.junit.jupiter.api.Test;
 
-public class BeverageTest {
+public class BroodTest {
     @Test
-    void createBeverage() {
-        Brood beverage = new KipCoery();
+    void createBroodje() {
+        Brood brood = new KipCoery();
         /*beverage = new Mocha(beverage);
         beverage = new Mocha(beverage);
         beverage = new Whip(beverage);*/
-        System.out.println(beverage.getDescription()+ " " + beverage.cost()+ "$");
+        System.out.println(brood.getDescription()+ " " + brood.cost()+ "$");
     }
 }

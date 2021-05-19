@@ -1,24 +1,21 @@
-package be.ehb.multec.ui;
+//package be.ehb.multec.ui;
 
-import be.ehb.multec.data.Repositories;
-import be.ehb.multec.model.*;
-import be.ehb.multec.data.util.*;
-import java.time.LocalDate;
+/*import be.ehb.multec.model.*;
 
 import java.util.List;
 
 import static be.ehb.multec.data.Repositories.getAuteurRepository;
-import static be.ehb.multec.data.Repositories.getBoekRepository;
+import static be.ehb.multec.data.Repositories.getBoekRepository;*/
 
-public class CLIApplication {
-    public static void main(String[] args) {
+//public class CLIApplication {
+    //public static void main(String[] args) {
         /*AUTEUR*/
         //System.out.println("*****Search auteur by Id");
         //System.out.println(getAuteurRepository().getauteur(2));
 
-        System.out.println("*****Search auteur By name");
-        List<auteur> auteurs=getAuteurRepository().getauteurs("lewis", false);
-        System.out.println(auteurs);
+        //System.out.println("*****Search auteur By name");
+        //List<auteur> auteurs=getAuteurRepository().getauteurs("lewis", false);
+        //System.out.println(auteurs);
 
         //System.out.println("*****All auteur  ");
         //List<auteur> auteurss = getAuteurRepository().getauteurs(null, false);
@@ -73,5 +70,5 @@ public class CLIApplication {
 
    
 
-    }
-}
+    //}
+//}

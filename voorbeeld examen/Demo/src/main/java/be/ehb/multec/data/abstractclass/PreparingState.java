@@ -1,19 +1,20 @@
 package be.ehb.multec.data.abstractclass;
 
 public class PreparingState extends State{
-    public PreparingState(GumballMachine gumballMachine) {
-        super(gumballMachine);
+    public PreparingState(StateMachine stateMachine) {
+        super(stateMachine);
     }
 
     @Override
     public void StartMaking() {
         System.err.println("Your order is being prepared");
-        setState(getGumballMachine().PREPARING);
+        setState(getStateMachine().PREPARING);
     }
 
     public void NextState() {
         System.err.println("Your order is almost finished");
-        setState(getGumballMachine().FINISHED);
-        getGumballMachine().Finished();
+        setState(getStateMachine().FINISHED);
+        getStateMachine().Finished();
     }
+
 }

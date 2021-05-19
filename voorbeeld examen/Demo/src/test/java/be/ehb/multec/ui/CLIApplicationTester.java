@@ -1,7 +1,5 @@
-package be.ehb.multec.ui;
-import be.ehb.multec.data.Repositories;
+/*package be.ehb.multec.ui;
 import be.ehb.multec.model.*;
-import be.ehb.multec.data.util.*;
 import org.junit.jupiter.api.Test;
 
 
@@ -12,7 +10,6 @@ import java.util.List;
 
 import static be.ehb.multec.data.Repositories.getAuteurRepository;
 import static be.ehb.multec.data.Repositories.getBoekRepository;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CLIApplicationTester {
     @Test
@@ -110,4 +107,4 @@ class CLIApplicationTester {
         System.out.println(boeks);
     }
 
-}
+}*/

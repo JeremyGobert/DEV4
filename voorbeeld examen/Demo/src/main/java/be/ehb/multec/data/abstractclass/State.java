@@ -1,13 +1,15 @@
 package be.ehb.multec.data.abstractclass;
 
+import java.util.Objects;
+
 public abstract class State {
-    private GumballMachine gumballMachine;
-    public State(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
+    private StateMachine stateMachine;
+    public State(StateMachine stateMachine) {
+        this.stateMachine = stateMachine;
     }
 
-    protected GumballMachine getGumballMachine() {
-        return gumballMachine;
+    protected StateMachine getStateMachine() {
+        return stateMachine;
     }
 
     protected void StartMaking() {
@@ -27,6 +29,7 @@ public abstract class State {
     }
 
     protected void setState(State state) {
-        gumballMachine.setState(state);
+        stateMachine.setState(state);
     }
+
 }

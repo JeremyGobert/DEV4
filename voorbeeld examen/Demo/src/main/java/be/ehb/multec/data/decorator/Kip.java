@@ -6,7 +6,7 @@ public class Kip extends Brood {
     }
 
     @Override
-    protected double cost() {
+    public double cost() {
         return 45.88;
     }
 }

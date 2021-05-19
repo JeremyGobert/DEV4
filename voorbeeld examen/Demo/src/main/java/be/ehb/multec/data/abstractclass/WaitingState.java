@@ -1,19 +1,19 @@
 package be.ehb.multec.data.abstractclass;
 
 public class WaitingState extends State{
-    public WaitingState(GumballMachine gumballMachine) {
-        super(gumballMachine);
+    public WaitingState(StateMachine stateMachine) {
+        super(stateMachine);
     }
 
     @Override
     public void InWaiting() {
         System.err.println("Your order is waiting to be prepared");
-        setState(getGumballMachine().WAITING);
+        setState(getStateMachine().WAITING);
     }
 
     public void NextState() {
         System.err.println("Your order will be prepared");
-        setState(getGumballMachine().PREPARING);
-        getGumballMachine().StartMaking();
+        setState(getStateMachine().PREPARING);
+        getStateMachine().StartMaking();
     }
 }

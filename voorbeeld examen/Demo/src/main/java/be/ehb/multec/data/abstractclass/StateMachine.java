@@ -1,6 +1,6 @@
 package be.ehb.multec.data.abstractclass;
 
-public class GumballMachine {
+public class StateMachine {
     public final State WAITING;
     public final State PREPARING;
     public final State FINISHED;
@@ -11,9 +11,13 @@ public class GumballMachine {
         return numberOfGumballs;
     }*/
 
+    @Override
+    public String toString() {
+        return "" +state.toString() ;
+    }
 
     /*public GumballMachine(int numberOfGumballs)*/
-    public GumballMachine() {
+    public StateMachine() {
         WAITING = new WaitingState(this);
         PREPARING = new PreparingState(this);
         FINISHED = new FinishedState(this);
@@ -28,9 +32,10 @@ public class GumballMachine {
         }
     }*/
 
-    void setState(State state) {
+    public void setState(State state) {
         this.state = state;
     }
+
 
     /*public boolean isEmpty() {
         return numberOfGumballs == 0;
@@ -58,4 +63,20 @@ public class GumballMachine {
     public void NextState() {
         state.NextState();
     }
+
+    public String getState() {
+        String stateName = toString();
+        String result = "";
+        if(state == WAITING){
+            result = "WAITING";
+        }else if(state == PREPARING){
+            result = "PREPARING";
+        }else {
+            result = "FINISHED";
+        }
+
+        return result;
+    }
+
+
 }
