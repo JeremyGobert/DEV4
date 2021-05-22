@@ -29,7 +29,27 @@ function nextState() {
 
 function stateShow() {
     console.log(stateList[stateCurrent]);
+    console.log(stateBinarySearch(stateList, stateCurrent, 0, stateList.length - 1));
 }
+
+let stateBinarySearch = function (arr, x, start, end) {
+
+    if (start > end) {
+        return "State not found";
+    }
+
+    let mid = Math.floor((start + end) / 2);
+
+    if (mid === x) {
+        return arr[mid];
+    }
+
+    if (mid > x) {
+        return stateBinarySearch(arr, x, start, mid - 1);
+    } else {
+        return stateBinarySearch(arr, x, mid + 1, end);
+    }
+};
 
 function stateLShowList() {
     stateList.forEach(function (state) {
