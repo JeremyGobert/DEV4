@@ -13,24 +13,11 @@ class RestaurantTest {
     }
 
     @Test
-    void getMenuItems() { //SRP?
+    void getMenuItems() {
         Restaurant restaurant = new Restaurant();
         List<MenuItem> menu = restaurant.getMenuItems();
-        /*double total = 0.0;*/
         for (MenuItem menuItem: menu) {
             System.err.println(menuItem);
-            /*total += menuItem.getPrice();*/
         }
-        /*System.err.println("Total €" + total);*/
     }
-
-    /*@Test
-    void superAggregate() {
-        Restaurant restaurant = new Restaurant();
-        double total = 0.0;
-        for (MenuItem menuItem: restaurant) {
-            total += menuItem.getPrice();
-        }
-        System.err.println("Total €" + total);
-    }*/
 }

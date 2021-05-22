@@ -8,13 +8,7 @@ class StateMachineTest {
     @Test
     void GetOrderInfo() {
         StateMachine stateMachine = new StateMachine();
-        //stateMachine.getState();
         System.err.println(stateMachine.toString());
-        /*stateMachine.NextState();
-        stateMachine.StartMaking();
-        stateMachine.NextState();
-        stateMachine.Finished();
-        stateMachine.NextState();*/
     }
 
     @Test
